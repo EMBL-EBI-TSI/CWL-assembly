@@ -8,15 +8,15 @@ requirements:
   StepInputExpressionRequirement: {}
 
 
-arguments:
-  - valueFrom: $(runtime.outdir)
-    prefix: -o
-#  - valueFrom: $(runtime.tmpdir)
-#    prefix: --tmp-dir
-  - valueFrom: $(5000)
-    prefix: --memory
-  - valueFrom: $(runtime.cores)
-    prefix: --threads
+# arguments:
+#   - valueFrom: $(runtime.outdir)
+#     prefix: -o
+# #  - valueFrom: $(runtime.tmpdir)
+# #    prefix: --tmp-dir
+#   - valueFrom: $(5000)
+#     prefix: --memory
+#   - valueFrom: $(runtime.cores)
+#     prefix: --threads
 
 inputs:
   forward_reads:
