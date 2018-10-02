@@ -120,16 +120,16 @@ steps:
       - trimmed_sequences_gz_md5
     run: stats/fasta-trimming.cwl
 
-$schemas:
-  - 'http://edamontology.org/EDAM_1.16.owl'
-  - 'https://schema.org/docs/schema_org_rdfa.html'
+# $schemas:
+#   - 'http://edamontology.org/EDAM_1.16.owl'
+#   - 'https://schema.org/docs/schema_org_rdfa.html'
 
-$namespaces:
-  edam: 'http://edamontology.org/'
-  iana: 'https://www.iana.org/assignments/media-types/'
-  s: 'http://schema.org/'
+# $namespaces:
+#   edam: 'http://edamontology.org/'
+#   iana: 'https://www.iana.org/assignments/media-types/'
+#   s: 'http://schema.org/'
 
-'s:copyrightHolder': EMBL - European Bioinformatics Institute
-'s:license': 'https://www.apache.org/licenses/LICENSE-2.0'
+# 's:copyrightHolder': EMBL - European Bioinformatics Institute
+# 's:license': 'https://www.apache.org/licenses/LICENSE-2.0'
 
 # export TMP=$PWD/tmp; cwltoil --user-space-docker-cmd=docker --debug --outdir $PWD/out --logFile $PWD/log  --workDir $PWD/tmp_toil --retryCount 0 cwl/metaspades_pipeline.cwl cwl/metaspades_pipeline.yml
